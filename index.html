@@ -286,6 +286,43 @@
     font-weight: 600;
   }
 
+  /* VIDEO HIGHLIGHTS SECTION */
+  .video-highlights {
+    padding: 20px 32px;
+    background: var(--dark3);
+    border-bottom: 1px solid var(--border);
+  }
+
+  .video-highlights-title {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 11px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: var(--red);
+    margin-bottom: 16px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+
+  .video-container {
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+    border: 1px solid var(--border);
+  }
+
+  .video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+  }
+
   /* CONTENT SECTIONS */
   .card-body {
     padding: 0;
@@ -506,6 +543,7 @@
     .section { padding: 16px 20px; }
     .card-header-text { padding: 20px; }
     .measurements-row { padding: 14px 20px; }
+    .video-highlights { padding: 16px 20px; }
   }
 </style>
 </head>
@@ -571,6 +609,14 @@
       <div class="meas-item"><span class="meas-label">Возраст</span><span class="meas-val">22 года</span></div>
     </div>
 
+    <!-- VIDEO HIGHLIGHTS -->
+    <div class="video-highlights">
+      <div class="video-highlights-title">▶ ХАЙЛАЙТЫ СЕЗОНА</div>
+      <div class="video-container">
+        <!-- Вставьте YouTube ссылку здесь: https://www.youtube.com/embed/VIDEO_ID -->
+      </div>
+    </div>
+
     <div class="card-body">
 
       <div class="section">
@@ -631,451 +677,6 @@
       <div class="section">
         <div class="section-title red-t"><span class="icon">🚩</span>Скрытый риск / красный флаг</div>
         <p>Завышенная цена обмена. Отправив пики #74 и #148 вместе с #9, «Чифс» лишили себя патронов для Дня 2–3. Сам Делейн переоценён ровно на 1–1.5 позиции — его место было пик #8–9, а не #6.</p>
-      </div>
-
-    </div>
-  </div>
-</div>
-
-<!-- PLAYER 2: PETER WOODS -->
-<div class="player-card">
-  <div class="card-inner">
-    <div class="card-header">
-      <div class="card-photo-section">
-        <div class="card-photo-placeholder">📸</div>
-      </div>
-      <div class="card-header-text">
-        <div class="card-header-left">
-          <div class="pick-badge">РАУНД 1 · ПИК #29 · DEFENSIVE TACKLE</div>
-          <div class="player-name">ПИТЕР ВУДС</div>
-          <div class="player-pos-school">DT · Clemson</div>
-        </div>
-        <div class="card-grade">
-          <span class="grade-label">ИТОГОВАЯ ОЦЕНКА</span>
-          <div class="grade-value grade-B-plus">B+</div>
-        </div>
-      </div>
-    </div>
-
-    <div class="measurements-row">
-      <div class="meas-item"><span class="meas-label">Рост</span><span class="meas-val">6'2.5" / 189 см</span></div>
-      <div class="meas-item"><span class="meas-label">Вес</span><span class="meas-val">298 фунт / 135 кг</span></div>
-      <div class="meas-item"><span class="meas-label">Длина рук</span><span class="meas-val">31.25"</span></div>
-      <div class="meas-item"><span class="meas-label">Размер кистей</span><span class="meas-val">9.125"</span></div>
-      <div class="meas-item"><span class="meas-label">Возраст</span><span class="meas-val">21 год (март 2005)</span></div>
-    </div>
-
-    <div class="card-body">
-
-      <div class="section">
-        <div class="section-title green"><span class="icon">🟢</span>Атлетизм и физический профиль</div>
-        <p>Вудс выделяется нетипичной боковой подвижностью для DT весом 300 фунтов. <strong>Его взрывной первый шаг и скорость в gap control — два атрибута, которые Спагнуоло не может упустить.</strong></p>
-      </div>
-
-      <div class="section">
-        <div class="section-title green"><span class="icon">🟢</span>Техника и навыки</div>
-        <p>Карьерный win rate в pass rush составляет <strong>21.4%</strong> — за последние 11 сезонов среди игроков Power 4 лучше этот показатель имели всего 3 игрока.</p>
-        <p>На freshman-сезоне (2023) Вудс показал феноменальный результат: 86.5 по общей оценке PFF и 86.5 по run defense, при этом ему было всего 20 лет.</p>
-        <div class="fact-box">
-          Вудс — самый молодой игрок в классе 2026: 21 год на момент драфта. По сопоставимым грейдам Bleacher Report он сравним с Джоэлом Эбиксом (2022, пик #12, уже Pro Bowler).
-        </div>
-        <div class="grade-breakdown" style="margin-top:12px;">
-          <div class="grade-chip"><span class="gc-source">PFF Career Pass Rush</span><br><span class="gc-val">75.3</span></div>
-          <div class="grade-chip"><span class="gc-source">PFF Freshman OVR</span><br><span class="gc-val">86.5</span></div>
-          <div class="grade-chip"><span class="gc-source">Career Win Rate</span><br><span class="gc-val">21.4%</span></div>
-          <div class="grade-chip"><span class="gc-source">SI Position Rank</span><br><span class="gc-val">#1 DT</span></div>
-          <div class="grade-chip"><span class="gc-source">SI Grade</span><br><span class="gc-val">A−</span></div>
-        </div>
-      </div>
-
-      <div class="section">
-        <div class="section-title red-t"><span class="icon">🔴</span>Зоны для развития</div>
-        <p>2025-й сезон был разочаровывающим по меркам ожиданий: лишь 2 сака, спад в статистике давления. Команда Clemson завершила 8-5, что намекает на общий регресс программы, но не оправдывает.</p>
-        <div class="risk-flag">
-          <p>В 2024-м Вудс сам признал, что играл с лишним весом (h/t The Clemson Insider). Контроль кондиций — ключевой фактор его успеха в НФЛ.</p>
-        </div>
-      </div>
-
-      <div class="section">
-        <div class="section-title blue"><span class="icon">📊</span>Продвинутая аналитика</div>
-        <div class="stat-grid">
-          <div class="stat-box"><span class="s-label">Career TFL</span><div class="s-val">14.5</div><div class="s-context">35 игр, 3 сезона</div></div>
-          <div class="stat-box"><span class="s-label">Career Pressures</span><div class="s-val">54</div><div class="s-context">по PFF</div></div>
-          <div class="stat-box"><span class="s-label">Career Sacks</span><div class="s-val">5</div><div class="s-context">за 3 года</div></div>
-          <div class="stat-box"><span class="s-label">Snaps (career)</span><div class="s-val">1,258</div><div class="s-context">полный объём</div></div>
-        </div>
-      </div>
-
-      <div class="section">
-        <div class="section-title gold"><span class="icon">⚙️</span>Схема и роль в «Чифс»</div>
-        <div class="perspective-grid">
-          <div class="persp-box">
-            <span class="p-label">ГОД 1: ротация</span>
-            <p>Вудс войдёт в ротацию рядом с Крисом Джонсом (32 года в июле) и Хайрисом Тонга (свободный агент). Немедленный стартер — маловероятно, но 30+ снэпов на матч — реалистичная мишень.</p>
-          </div>
-          <div class="persp-box">
-            <span class="p-label">ДОЛГОСРОЧНО</span>
-            <p>Главный претендент на роль преемника Крис Джонса. Если Крис Джонс покинет команду после сезона 2026-го — Вудс станет якорем DT на следующий контракт.</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="section">
-        <div class="section-title red-t"><span class="icon">🚩</span>Скрытый риск / красный флаг</div>
-        <p>Поляризующий сезон 2025-го создаёт обоснованные вопросы: регресс или следствие плохой команды? Ответ откроется в течение года.</p>
-      </div>
-
-    </div>
-  </div>
-</div>
-
-<!-- ============================================================ -->
-<!-- DAY 2 -->
-<!-- ============================================================ -->
-
-<div class="section-divider"><div class="divider-line"></div></div>
-
-<div class="day-header">
-  <div class="day-label">День 2</div>
-  <div class="day-title">Нестандартный пасс-рашер</div>
-  <div class="day-desc">Имея всего один пик Дня 2, Вич не стал торговаться вниз. Вместо этого — нетипичный для Спагнуоло выбор.</div>
-</div>
-
-<!-- PLAYER 3: R MASON THOMAS -->
-<div class="player-card">
-  <div class="card-inner">
-    <div class="card-header">
-      <div class="card-photo-section">
-        <div class="card-photo-placeholder">📸</div>
-      </div>
-      <div class="card-header-text">
-        <div class="card-header-left">
-          <div class="pick-badge">РАУНД 2 · ПИК #40 · EDGE RUSHER</div>
-          <div class="player-name">R МЕЙСОН ТОМАС</div>
-          <div class="player-pos-school">EDGE / DE · Oklahoma</div>
-        </div>
-        <div class="card-grade">
-          <span class="grade-label">ИТОГОВАЯ ОЦЕНКА</span>
-          <div class="grade-value grade-A-minus">A−</div>
-        </div>
-      </div>
-    </div>
-
-    <div class="measurements-row">
-      <div class="meas-item"><span class="meas-label">Рост</span><span class="meas-val">6'2.5" / 189 см</span></div>
-      <div class="meas-item"><span class="meas-label">Вес</span><span class="meas-val">241 фунт / 109 кг</span></div>
-      <div class="meas-item"><span class="meas-label">Длина рук</span><span class="meas-val">31.75"</span></div>
-      <div class="meas-item"><span class="meas-label">40 ярдов</span><span class="meas-val">4.67 сек (90 перс.)</span></div>
-      <div class="meas-item"><span class="meas-label">Возраст</span><span class="meas-val">21 год</span></div>
-    </div>
-
-    <div class="card-body">
-
-      <div class="section">
-        <div class="section-title green"><span class="icon">🟢</span>Атлетизм и физический профиль</div>
-        <p>Томас — один из самых взрывных пасс-рашеров класса 2026-го. Его 40 ярдов за 4.67 секунды попадает в <strong>90-й перцентиль среди EDGE</strong>. Длина рук 31.75" тоже находится в верхнем квартиле.</p>
-        <div class="fact-box">
-          Буква «R» в имени Томаса — не аббревиатура. Никакой точки, никакого полного имени. Семейная традиция его родителей из Оклахомы.
-        </div>
-      </div>
-
-      <div class="section">
-        <div class="section-title green"><span class="icon">🟢</span>Техника и навыки</div>
-        <p>Уникальное сочетание взрывного первого шага и способности конвертировать скорость в силу на верхнем ярусе — его pass rush win rate 35.1% стоит в одной лиге с лучшими в классе.</p>
-        <div class="grade-breakdown" style="margin-top:12px;">
-          <div class="grade-chip"><span class="gc-source">PFF Pass Rush 2025</span><br><span class="gc-val">90.4</span></div>
-          <div class="grade-chip"><span class="gc-source">Pass Rush Win Rate</span><br><span class="gc-val">35.1%</span></div>
-          <div class="grade-chip"><span class="gc-source">Career Sacks</span><br><span class="gc-val">17</span></div>
-          <div class="grade-chip"><span class="gc-source">Career Pressures</span><br><span class="gc-val">80</span></div>
-          <div class="grade-chip"><span class="gc-source">A-to-Z Projection</span><br><span class="gc-val">#37 OVR</span></div>
-        </div>
-      </div>
-
-      <div class="section">
-        <div class="section-title red-t"><span class="icon">🔴</span>Зоны для развития</div>
-        <p>Томас — нетипичный выбор для Спагнуоло: не run-first, не классический «утробный» эдж. При 241 фунте ему придётся набрать 15–20 фунтов мышечной массы в НФЛ.</p>
-        <div class="risk-flag">
-          <p>Травма квадрицепса в ноябре 2025-го, из-за которой он пропустил концовку сезона в Оклахоме. В НФЛ любой регресс в скорости категорически скомпрометирует его стоимость.</p>
-        </div>
-      </div>
-
-      <div class="section">
-        <div class="section-title blue"><span class="icon">📊</span>Продвинутая аналитика</div>
-        <div class="stat-grid">
-          <div class="stat-box"><span class="s-label">2025 TFL</span><div class="s-val">9.5</div><div class="s-context">career high</div></div>
-          <div class="stat-box"><span class="s-label">2025 Sacks</span><div class="s-val">6.5</div><div class="s-context">career high</div></div>
-          <div class="stat-box"><span class="s-label">2025 Pressures</span><div class="s-val">28</div><div class="s-context">пропустив ~4 игры</div></div>
-          <div class="stat-box"><span class="s-label">40 Yard Percentile</span><div class="s-val">90th</div><div class="s-context">среди EDGE</div></div>
-        </div>
-      </div>
-
-      <div class="section">
-        <div class="section-title gold"><span class="icon">⚙️</span>Схема и роль в «Чифс»</div>
-        <div class="perspective-grid">
-          <div class="persp-box">
-            <span class="p-label">ГОД 1: специалист по пасс-рашу</span>
-            <p>Томас войдёт как third-down specialist, работая в паре с Карлафтисом. Его роль — освободить Крис Джонса для прессинга по средней линии.</p>
-          </div>
-          <div class="persp-box">
-            <span class="p-label">ДОЛГОСРОЧНО</span>
-            <p>Если набрать 15–20 фунтов мышечной массы в программе Чифс и сохранить скорость — потолок стартера базовой дефенса и уж точно — edge rusher отделения.</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="section">
-        <div class="section-title red-t"><span class="icon">🚩</span>Скрытый риск / красный флаг</div>
-        <p>Несоответствие ДНК игрока схеме Спагнуоло — самый большой концептуальный риск всего драфта Чифс. Спагнуоло любит большие, мощные джи — Томас маленький и быстрый.</p>
-      </div>
-
-    </div>
-  </div>
-</div>
-
-<!-- ============================================================ -->
-<!-- DAY 3 -->
-<!-- ============================================================ -->
-
-<div class="section-divider"><div class="divider-line"></div></div>
-
-<div class="day-header">
-  <div class="day-label">День 3</div>
-  <div class="day-title">Глубина + неочевидные ставки</div>
-  <div class="day-desc">Первые четыре пика — оборона. На Дне 3 Вич добавил ещё одного защитника, двух атакующих игроков и backup по специалистам.</div>
-</div>
-
-<!-- PLAYER 4: JADON CANADY -->
-<div class="player-card">
-  <div class="card-inner">
-    <div class="card-header">
-      <div class="card-photo-section">
-        <div class="card-photo-placeholder">📸</div>
-      </div>
-      <div class="card-header-text">
-        <div class="card-header-left">
-          <div class="pick-badge">РАУНД 4 · ПИК #109 · CORNERBACK</div>
-          <div class="player-name">ДЖЕЙДОН КЭНЕДИ</div>
-          <div class="player-pos-school">CB / Nickel / FS · Oregon</div>
-        </div>
-        <div class="card-grade">
-          <span class="grade-label">ИТОГОВАЯ ОЦЕНКА</span>
-          <div class="grade-value grade-B-plus">B+</div>
-        </div>
-      </div>
-    </div>
-
-    <div class="measurements-row">
-      <div class="meas-item"><span class="meas-label">Рост</span><span class="meas-val">5'10.5" / 178 см</span></div>
-      <div class="meas-item"><span class="meas-label">Вес</span><span class="meas-val">181 фунт / 82 кг</span></div>
-      <div class="meas-item"><span class="meas-label">Длина рук</span><span class="meas-val">30" (8-й перс.)</span></div>
-      <div class="meas-item"><span class="meas-label">Размер кистей</span><span class="meas-val">9.25"</span></div>
-      <div class="meas-item"><span class="meas-label">Возраст</span><span class="meas-val">22 года</span></div>
-    </div>
-
-    <div class="card-body">
-
-      <div class="section">
-        <div class="section-title green"><span class="icon">🟢</span>Атлетизм и физический профиль</div>
-        <p>Кэнеди — игрок с высоким футбольным IQ, а не атлетический феномен. Его ценность — в позиционировании, а не в скорости.</p>
-      </div>
-
-      <div class="section">
-        <div class="section-title green"><span class="icon">🟢</span>Техника и навыки</div>
-        <p>Лучшее достижение сезона 2025-го: Кэнеди пропустил <strong>всего 104 ярда на 37 целевых передачах</strong> — наивысший показатель в классе.</p>
-        <div class="fact-box">
-          Кэнеди провёл карьеру в трёх программах: Tulane → Ole Miss → Oregon. Дэйн Брюглер из The Athletic назвал его прозвище «The Glue Guy» — за консистентность, а не за взрыв.
-        </div>
-        <div class="grade-breakdown" style="margin-top:12px;">
-          <div class="grade-chip"><span class="gc-source">Passer Rtg Allowed</span><br><span class="gc-val">39.4</span></div>
-          <div class="grade-chip"><span class="gc-source">Yards Allowed</span><br><span class="gc-val">104</span></div>
-          <div class="grade-chip"><span class="gc-source">Career Starts</span><br><span class="gc-val">43</span></div>
-          <div class="grade-chip"><span class="gc-source">B/R Comp. Grade</span><br><span class="gc-val">~6.9</span></div>
-          <div class="grade-chip"><span class="gc-source">Brugler (Beast)</span><br><span class="gc-val">R4–R5</span></div>
-        </div>
-      </div>
-
-      <div class="section">
-        <div class="section-title red-t"><span class="icon">🔴</span>Зоны для развития</div>
-        <p>Кэнеди слишком агрессивен — что для слот-корнера означает уязвимость на double moves и пакетах уловок ресиверов. На мэне он часто фолит.</p>
-      </div>
-
-      <div class="section">
-        <div class="section-title gold"><span class="icon">⚙️</span>Схема и роль в «Чифс»</div>
-        <div class="perspective-grid">
-          <div class="persp-box">
-            <span class="p-label">ГОД 1: слот + спецкоманды</span>
-            <p>Вместе с Кейдером Коху (подписан как свободный агент) Кэнеди будет конкурировать за позицию никель-корнера. 40–50% снэпов на матч — его план.</p>
-          </div>
-          <div class="persp-box">
-            <span class="p-label">ДОЛГОСРОЧНО</span>
-            <p>Это типичный «Бретт Вич сюрприз Дня 3»: Майк Сэйнристил, Нол Уильямс — всё это корнербеки, которые Вич подобрал в глубоких раундах, а потом продал высоко.</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="section">
-        <div class="section-title red-t"><span class="icon">🚩</span>Скрытый риск / красный флаг</div>
-        <p>Отсутствие тестирования на Combine оставляет точные атлетические данные в серой зоне. Три школы за пять лет — вопрос о стабильности.</p>
-      </div>
-
-    </div>
-  </div>
-</div>
-
-<!-- PLAYER 5: EMMETT JOHNSON -->
-<div class="player-card">
-  <div class="card-inner">
-    <div class="card-header">
-      <div class="card-photo-section">
-        <div class="card-photo-placeholder">📸</div>
-      </div>
-      <div class="card-header-text">
-        <div class="card-header-left">
-          <div class="pick-badge">РАУНД 5 · ПИК #161 · RUNNING BACK</div>
-          <div class="player-name">ЭММЕТ ДЖОНСОН</div>
-          <div class="player-pos-school">RB · Nebraska</div>
-        </div>
-        <div class="card-grade">
-          <span class="grade-label">ИТОГОВАЯ ОЦЕНКА</span>
-          <div class="grade-value grade-B-plus">B+</div>
-        </div>
-      </div>
-    </div>
-
-    <div class="measurements-row">
-      <div class="meas-item"><span class="meas-label">Рост</span><span class="meas-val">5'10" / 178 см</span></div>
-      <div class="meas-item"><span class="meas-label">Вес</span><span class="meas-val">202 фунт / 92 кг</span></div>
-      <div class="meas-item"><span class="meas-label">40 ярдов</span><span class="meas-val">4.56 сек</span></div>
-      <div class="meas-item"><span class="meas-label">Вертикальный</span><span class="meas-val">35.5"</span></div>
-      <div class="meas-item"><span class="meas-label">Жим лёжа</span><span class="meas-val">16 повт.</span></div>
-      <div class="meas-item"><span class="meas-label">Прыжок в длину</span><span class="meas-val">10 футов</span></div>
-    </div>
-
-    <div class="card-body">
-
-      <div class="section">
-        <div class="section-title green"><span class="icon">🟢</span>Атлетизм и физический профиль</div>
-        <p>Джонсон — не взрывной атлет по цифрам (4.56 на 40), но реальная скорость при смене направления и прыжках — это совсем другие характеристики.</p>
-        <div class="fact-box">
-          Джонсон родом из Миннесоты, его родители иммигрировали из Либерии. Он был удостоен титула «Mr. Football» штата в 2022-м году.
-        </div>
-      </div>
-
-      <div class="section">
-        <div class="section-title green"><span class="icon">🟢</span>Техника и навыки</div>
-        <p><strong>1,451 ярд по воздуху (лидер Big Ten), 5.8 ярдов за попытку, 251 попытка</strong> — первый сезон с 1000+ ярдами у Nebraska в XXI веке.</p>
-        <div class="grade-breakdown" style="margin-top:12px;">
-          <div class="grade-chip"><span class="gc-source">Rush YPC</span><br><span class="gc-val">5.8</span></div>
-          <div class="grade-chip"><span class="gc-source">Receptions</span><br><span class="gc-val">46</span></div>
-          <div class="grade-chip"><span class="gc-source">Big Ten RB of Year</span><br><span class="gc-val">✓</span></div>
-          <div class="grade-chip"><span class="gc-source">Brugler Rank</span><br><span class="gc-val">#4 RB</span></div>
-          <div class="grade-chip"><span class="gc-source">Consensus Rank</span><br><span class="gc-val">#5 RB</span></div>
-        </div>
-      </div>
-
-      <div class="section">
-        <div class="section-title red-t"><span class="icon">🔴</span>Зоны для развития</div>
-        <p>Скорость 4.56 означает, что в открытом поле он не убегает от профессиональных сейфти — придётся создавать углы и использовать ловкость.</p>
-      </div>
-
-      <div class="section">
-        <div class="section-title gold"><span class="icon">⚙️</span>Схема и роль в «Чифс»</div>
-        <div class="perspective-grid">
-          <div class="persp-box">
-            <span class="p-label">ГОД 1: дублёр Кеннета Уолкера</span>
-            <p>Джонсон дополняет Кеннета Уолкера как pass-catching back и потенциальный сменщик. Схема Энди Рида требует несколько RB на каждый матч.</p>
-          </div>
-          <div class="persp-box">
-            <span class="p-label">ДОЛГОСРОЧНО</span>
-            <p>Если Уолкер не продлит контракт или травмируется — Джонсон готов забрать первую роль. Его приёмные навыки подходят для оффенса Рида.</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="section">
-        <div class="section-title red-t"><span class="icon">🚩</span>Скрытый риск / красный флаг</div>
-        <p>Джонсон объявил о выходе из Bowl-игры после объявления о выходе на драфт — это нормально в современном колледже, но вопрос о его commitment остаётся.</p>
-      </div>
-
-    </div>
-  </div>
-</div>
-
-<!-- PLAYER 6: CYRUS ALLEN -->
-<div class="player-card">
-  <div class="card-inner">
-    <div class="card-header">
-      <div class="card-photo-section">
-        <div class="card-photo-placeholder">📸</div>
-      </div>
-      <div class="card-header-text">
-        <div class="card-header-left">
-          <div class="pick-badge">РАУНД 5 · ПИК #176 · WIDE RECEIVER</div>
-          <div class="player-name">САЙРУС АЛЛЕН</div>
-          <div class="player-pos-school">WR / Slot · Cincinnati</div>
-        </div>
-        <div class="card-grade">
-          <span class="grade-label">ИТОГОВАЯ ОЦЕНКА</span>
-          <div class="grade-value grade-B">B</div>
-        </div>
-      </div>
-    </div>
-
-    <div class="measurements-row">
-      <div class="meas-item"><span class="meas-label">Рост</span><span class="meas-val">5'11" / 180 см</span></div>
-      <div class="meas-item"><span class="meas-label">Вес</span><span class="meas-val">183 фунт / 83 кг</span></div>
-      <div class="meas-item"><span class="meas-label">Прыжок в длину</span><span class="meas-val">11 футов (Pro Day)</span></div>
-      <div class="meas-item"><span class="meas-label">Слот снэпы %</span><span class="meas-val">92% (2025)</span></div>
-      <div class="meas-item"><span class="meas-label">Возраст</span><span class="meas-val">23 года</span></div>
-    </div>
-
-    <div class="card-body">
-
-      <div class="section">
-        <div class="section-title green"><span class="icon">🟢</span>Атлетизм и физический профиль</div>
-        <p>Не был приглашён на Combine, что само по себе сигнал — однако на Pro Day Cincinnati он разочаровал аналитиков атлетизмом, но впечатлил техникой.</p>
-      </div>
-
-      <div class="section">
-        <div class="section-title green"><span class="icon">🟢</span>Техника и навыки</div>
-        <p><strong>13 тачдаунов за 51 приём и 674 ярда</strong> — Аллен установил рекорд Cincinnati в одном сезоне по приёмным TD конверсиям.</p>
-        <div class="fact-box">
-          Аллен — третий Bearcat, ушедший на драфте 2026 за один уикенд (после ЛБ Голдея и ТЭ Ройера). Для Cincinnati это 4-й год подряд, когда они выставляют несколько пиков за этот уикенд.
-        </div>
-        <div class="grade-breakdown" style="margin-top:12px;">
-          <div class="grade-chip"><span class="gc-source">TDs 2025</span><br><span class="gc-val">13</span></div>
-          <div class="grade-chip"><span class="gc-source">Career Avg YPR</span><br><span class="gc-val">16.6</span></div>
-          <div class="grade-chip"><span class="gc-source">vs Man Success</span><br><span class="gc-val">75%</span></div>
-          <div class="grade-chip"><span class="gc-source">vs Zone Success</span><br><span class="gc-val">83.7%</span></div>
-          <div class="grade-chip"><span class="gc-source">Brugler Rank WR</span><br><span class="gc-val">#27</span></div>
-        </div>
-      </div>
-
-      <div class="section">
-        <div class="section-title red-t"><span class="icon">🔴</span>Зоны для развития</div>
-        <p>Операция на руке у Texas A&M в 2024-м — история, которую нельзя игнорировать. После операции он провёл в Cincinnati год с отличными цифрами.</p>
-        <div class="risk-flag">
-          <p>Операция на руке (2024) — красный флаг, требующий мониторинга. В красной зоне одно повторное повреждение — и его ценность упадёт на 50%.</p>
-        </div>
-      </div>
-
-      <div class="section">
-        <div class="section-title gold"><span class="icon">⚙️</span>Схема и роль в «Чифс»</div>
-        <div class="perspective-grid">
-          <div class="persp-box">
-            <span class="p-label">ГОД 1: конкуренция + практика</span>
-            <p>Комната ресиверов Чифс — Рэши Райс, Ксавьер Уорти, Тайкуан Торнтон. Аллен конкурирует за 4–5 место. Практика в тренировочном составе — первый шаг.</p>
-          </div>
-          <div class="persp-box">
-            <span class="p-label">ДОЛГОСРОЧНО</span>
-            <p>Потолок — надёжный slot #3 с 40–50 приёмами и 500+ ярдами в сезон. Цифры TD-конверсии указывают на потенциал.</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="section">
-        <div class="section-title red-t"><span class="icon">🚩</span>Скрытый риск / красный флаг</div>
-        <p>Три школы, операция, пропущенный сезон у A&M — резюме с turbulence. Вопрос: смог ли он полностью восстановиться?</p>
       </div>
 
     </div>
