@@ -388,57 +388,6 @@
   .grade-chip .gc-source { color: var(--muted); font-size: 9px; }
   .grade-chip .gc-val { color: #fff; font-weight: 600; }
 
-  /* ФОТО ИГРОКА */
-  .player-photo {
-    width: 84px;
-    height: 84px;
-    border-radius: 50%;
-    border: 2px solid var(--red);
-    object-fit: cover;
-    background-color: var(--dark3); 
-    flex-shrink: 0;
-  }
-  .card-header-left {
-    display: flex;
-    align-items: center;
-    gap: 18px; /* Отступ между фото и текстом */
-  }
-  .card-header-info {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
-  /* ВИДЕО ХАЙЛАЙТЫ */
-  .video-wrapper {
-    position: relative;
-    padding-bottom: 56.25%; /* Строгая пропорция 16:9 для YouTube */
-    height: 0;
-    overflow: hidden;
-    margin-top: 12px;
-    border: 1px solid var(--border);
-    background: var(--dark4);
-  }
-  .video-wrapper iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    border: 0;
-  }
-  .video-placeholder {
-    position: absolute;
-    top: 0; left: 0; right: 0; bottom: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: var(--muted);
-    font-family: 'IBM Plex Mono', monospace;
-    font-size: 12px;
-    letter-spacing: 2px;
-  }
-  
   /* SECTION DIVIDER */
   .section-divider {
     max-width: 860px;
@@ -542,18 +491,17 @@
 </div>
 
 <!-- PLAYER 1: MANSOOR DELANE -->
-<div class="card-header-left">
-        <img class="player-photo" src="https://louisianavsallyall.com/wp-content/uploads/2026/04/LSU-Mansoor-Delane-101125.jpeg" alt="Мансур Делейн">
-        
-        <div class="card-header-info">
-          <div class="pick-badge">РАУНД 1 · ПИК #6 · CORNERBACK</div>
-          <div class="player-name">МАНСУР ДЕЛЕЙН</div>
-          <div class="player-pos-school">CB · LSU (трансфер из Virginia Tech)</div>
-        </div>
+<div class="player-card">
+  <div class="card-inner">
+    <div class="card-header">
+      <div class="card-header-left">
+        <div class="pick-badge">РАУНД 1 · ПИК #6 · CORNERBACK</div>
+        <div class="player-name">МАНСУР ДЕЛЕЙН</div>
+        <div class="player-pos-school">CB · LSU (трансфер из Virginia Tech)</div>
       </div>
       <div class="card-grade">
         <span class="grade-label">ИТОГОВАЯ ОЦЕНКА</span>
-        <div class="grade-value grade-A-plus">B+</div>
+        <div class="grade-value grade-A-plus">A+</div>
       </div>
     </div>
 
@@ -625,13 +573,6 @@
       <div class="section">
         <div class="section-title red-t"><span class="icon">🚩</span>Скрытый риск / красный флаг</div>
         <p>Завышенная цена обмена. Отправив пики #74 и #148 вместе с #9, «Чифс» лишили себя патронов для Дня 2–3. Сам игрок — минимум рисков. Риск сосредоточен в долгосрочных потерях глубины состава. Интересный факт из X: котировки ставок давали Делейну <strong>100 к 1</strong> на то, что он будет выбран именно под №6 — одно из самых нестандартных попаданий в истории букмекерского рынка драфта.</p>
-      </div>
-      <div class="section">
-        <div class="section-title white"><span class="icon">🎥</span>Видео Хайлайты</div>
-        <p>Ключевые розыгрыши и анализ техники на поле.</p>
-        <div class="video-wrapper">
-          <div class="video-placeholder">ЗДЕСЬ БУДЕТ IFRAME ВИДЕО</div>
-        </div>
       </div>
 
     </div>
