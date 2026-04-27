@@ -158,48 +158,9 @@
     overflow: hidden;
   }
 
-  /* CARD HEADER - with photo on left */
   .card-header {
-    padding: 0;
-    border-bottom: 1px solid var(--border);
-    display: flex;
-    align-items: stretch;
-    gap: 0;
-  }
-
-  /* PHOTO SECTION IN HEADER */
-  .card-photo-section {
-    flex-shrink: 0;
-    width: 180px;
-    background: linear-gradient(135deg, rgba(227,24,55,0.08), rgba(255,184,28,0.03));
-    border-right: 1px solid var(--border);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    min-height: 140px;
-  }
-
-  .card-photo-placeholder {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 48px;
-    color: rgba(255,255,255,0.1);
-    text-align: center;
-  }
-
-  .card-photo-placeholder img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
-
-  /* HEADER TEXT SECTION */
-  .card-header-text {
-    flex: 1;
     padding: 28px 32px 20px;
+    border-bottom: 1px solid var(--border);
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
@@ -284,43 +245,6 @@
     font-size: 14px;
     color: #fff;
     font-weight: 600;
-  }
-
-  /* VIDEO HIGHLIGHTS SECTION */
-  .video-highlights {
-    padding: 20px 32px;
-    background: var(--dark3);
-    border-bottom: 1px solid var(--border);
-  }
-
-  .video-highlights-title {
-    font-family: 'IBM Plex Mono', monospace;
-    font-size: 11px;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-    color: var(--red);
-    margin-bottom: 16px;
-    display: flex;
-    align-items: center;
-    gap: 8px;
-  }
-
-  .video-container {
-    position: relative;
-    width: 100%;
-    padding-bottom: 56.25%;
-    height: 0;
-    overflow: hidden;
-    border: 1px solid var(--border);
-  }
-
-  .video-container iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    border: none;
   }
 
   /* CONTENT SECTIONS */
@@ -521,29 +445,14 @@
     line-height: 1.8;
   }
 
-  @media (max-width: 768px) {
-    .card-header {
-      flex-direction: column;
-    }
-    .card-photo-section {
-      width: 100%;
-      border-right: none;
-      border-bottom: 1px solid var(--border);
-      min-height: 200px;
-    }
-    .card-header-text {
-      flex-direction: column;
-    }
-    .card-grade { text-align: left; }
-  }
-
   @media (max-width: 600px) {
+    .card-header { flex-direction: column; }
+    .card-grade { text-align: left; }
     .perspective-grid { grid-template-columns: 1fr; }
     .measurements-row { gap: 20px; }
     .section { padding: 16px 20px; }
-    .card-header-text { padding: 20px; }
+    .card-header { padding: 20px; }
     .measurements-row { padding: 14px 20px; }
-    .video-highlights { padding: 16px 20px; }
   }
 </style>
 </head>
@@ -559,7 +468,7 @@
 
 <!-- INTRO -->
 <div class="intro-block">
-  Чифс подошли к драфту 2026 года в нестандартной ситуации: Патрик Махомс восстанавливается после разрыва крестообразной связки, защита находится на переоценке, и генеральный менеджер Бретт Вич решил действовать агрессивно. Полный разбор.
+  Чифс подошли к драфту 2026 года в нестандартной ситуации: Патрик Махомс восстанавливается после разрыва крестообразных связок, Трент МакДаффи был обменян в Лос-Анджелес, а команда впервые с 2014 года пропустила плей-офф. Ответ Бретта Вича — семь лет самого агрессивного оборонительного драфтинга в истории франшизы. Четыре первых пика — исключительно на защиту. Это был манифест.
 </div>
 
 <!-- TRADE BANNER -->
@@ -567,7 +476,7 @@
   <div class="trade-icon">🔄</div>
   <div class="trade-text">
     <strong>ОБМЕН ДНЯ 1:</strong> Чифс отправили пики #9, #74 и #148 в Кливленд в обмен на пик #6.<br>
-    По данным инсайдеров, Канзас-Сити сыграл на опережение — «Сэйнтс» собирались взять Делейна под №8. Одержав победу в гонке, Вич зафиксировал своего CB1 на полное время.
+    По данным инсайдеров, Канзас-Сити сыграл на опережение — «Сэйнтс» собирались взять Делейна под №8. Одержимость конкурентным рынком заставила Вича заплатить за подъём 3 ступени ценой двух дополнительных пиков Дня 2–3.
   </div>
 </div>
 
@@ -578,26 +487,21 @@
 <div class="day-header">
   <div class="day-label">День 1</div>
   <div class="day-title">Двойная загрузка защиты</div>
-  <div class="day-desc">Вич закрыл линию корнербеков и линию защиты за один вечер, пожертвовав глубиной для концентрации на качестве.</div>
+  <div class="day-desc">Вич закрыл линию корнербеков и линию защиты за один вечер, пожертвовав глубиной для концентрации элитного таланта.</div>
 </div>
 
 <!-- PLAYER 1: MANSOOR DELANE -->
 <div class="player-card">
   <div class="card-inner">
     <div class="card-header">
-      <div class="card-photo-section">
-        <div class="card-photo-placeholder">📸</div>
+      <div class="card-header-left">
+        <div class="pick-badge">РАУНД 1 · ПИК #6 · CORNERBACK</div>
+        <div class="player-name">МАНСУР ДЕЛЕЙН</div>
+        <div class="player-pos-school">CB · LSU (трансфер из Virginia Tech)</div>
       </div>
-      <div class="card-header-text">
-        <div class="card-header-left">
-          <div class="pick-badge">РАУНД 1 · ПИК #6 · CORNERBACK</div>
-          <div class="player-name">МАНСУР ДЕЛЕЙН</div>
-          <div class="player-pos-school">CB · LSU (трансфер из Virginia Tech)</div>
-        </div>
-        <div class="card-grade">
-          <span class="grade-label">ИТОГОВАЯ ОЦЕНКА</span>
-          <div class="grade-value grade-A-plus">A+</div>
-        </div>
+      <div class="card-grade">
+        <span class="grade-label">ИТОГОВАЯ ОЦЕНКА</span>
+        <div class="grade-value grade-A-plus">A+</div>
       </div>
     </div>
 
@@ -609,27 +513,19 @@
       <div class="meas-item"><span class="meas-label">Возраст</span><span class="meas-val">22 года</span></div>
     </div>
 
-    <!-- VIDEO HIGHLIGHTS -->
-    <div class="video-highlights">
-      <div class="video-highlights-title">▶ ХАЙЛАЙТЫ СЕЗОНА</div>
-      <div class="video-container">
-        <!-- Вставьте YouTube ссылку здесь: https://www.youtube.com/embed/VIDEO_ID -->
-      </div>
-    </div>
-
     <div class="card-body">
 
       <div class="section">
         <div class="section-title green"><span class="icon">🟢</span>Атлетизм и физический профиль</div>
-        <p>Самый спорный момент в предсезонной оценке Делейна — скорость — был окончательно закрыт на Pro Day: 4.38 сек на 40 ярдов показал, что он попадает в 73-й перцентиль среди корнербеков. Это не феномен, но это достаточно.</p>
+        <p>Самый спорный момент в предсезонной оценке Делейна — скорость — был окончательно закрыт на Pro Day: 4.38 секунды на 40 ярдов. До этого эксперты опасались, что он недостаточно быстр для работы на вертикальных маршрутах без помощи страхующего сейфти. Время 4.38 означает, что Делейн может играть «island» — в одиночной опеке без страховки над головой — против любого ресивера в лиге. Его взрывная мощь компенсирует относительно скромный вес (187 фунтов): он играет физически, жёстко контактирует на линии схватки и не уступает в борьбе за мяч. Бывший борец в средней школе, Делейн перенёс координацию и баланс из борцовского мата на футбольное поле.</p>
       </div>
 
       <div class="section">
         <div class="section-title green"><span class="icon">🟢</span>Техника и навыки</div>
-        <p>Делейн — учебное пособие по работе ног. Его способность зеркалить маршруты, не теряя позицию, в прессе классична. За весь сезон 2025 он отдал всего 0 тачдаунов на 37 целевых передачах.</p>
-        <p>Чтение комбинаций маршрутов у него вопиюще преждевременное — он занимает правильную позицию до того, как QB отпустит мяч.</p>
+        <p>Делейн — учебное пособие по работе ног. Его способность зеркалить маршруты, не теряя позицию, в прессинговом покрытии не имеет аналогов в классе 2026. Стойка — высокая и агрессивная — создаёт у квотербека визуальный «забор» ещё до старта ресивера. <strong>В man coverage он зафиксировал оценку PFF 89.1 — лучшую среди всех корнербеков класса</strong>, уступив лишь потенциальному пику №1 следующего года Леонарду Муру среди всех игроков в лиге.</p>
+        <p>Чтение комбинаций маршрутов у него вопиюще преждевременное — он занимает правильную позицию до того, как квотербек заканчивает передачу. Именно поэтому в последних четырёх играх сезона в его направлении было брошено всего 5 передач. Одинаково хорош в zone и press-man — редкий схемонезависимый профиль.</p>
         <div class="fact-box">
-          По данным PFF College, Делейн и его новый партнёр по команде Джейдон Кэнеди разделили первое и второе место по coverage rating в классе 2026.
+          По данным PFF College, Делейн и его новый партнёр по команде Джейдон Кэнеди разделили первое и второе место по минимальному количеству допущенных первых даунов среди корнербеков Power 4 с 30+ целевыми передачами: Кэнеди — 5, Делейн — 7.
         </div>
         <div class="grade-breakdown" style="margin-top:12px;">
           <div class="grade-chip"><span class="gc-source">PFF MAN COV.</span><br><span class="gc-val">89.1</span></div>
@@ -644,7 +540,7 @@
       <div class="section">
         <div class="section-title red-t"><span class="icon">🔴</span>Зоны для развития</div>
         <div class="risk-flag">
-          <p>Длина рук (30 дюймов, 8-й перцентиль) — главный и единственный заметный изъян Делейна. Крупные граничные ресиверы с агрессивной техникой могут искать его на border.</p>
+          <p>Длина рук (30 дюймов, 8-й перцентиль) — главный и единственный заметный изъян Делейна. Крупные граничные ресиверы в НФЛ умеют использовать разницу в телосложении при приёме мяча у боковой линии. При несоответствии типа тела (джамбо-ресивер против лёгкого корнера) это может стать фактором в решающих плей-офф ситуациях. Физическая прочность на протяжении 17 игр сезона тоже под вопросом — в ресурсоёмком SEC он отыграл лишь 11 матчей в 2025-м. Функциональная сила рук должна продолжать развиваться в НФЛ-программе по физподготовке.</p>
         </div>
       </div>
 
@@ -665,18 +561,18 @@
         <div class="perspective-grid">
           <div class="persp-box">
             <span class="p-label">ГОД 1: немедленно</span>
-            <p>Делейн заходит как CB1, занимая роль Трента МакДаффи (обменянного в «Рэмс» этой весной). Система Спагнуоло требует CB, который может микшировать зону и мэн в одном снэпе.</p>
+            <p>Делейн заходит как CB1, занимая роль Трента МакДаффи (обменянного в «Рэмс» этой весной). Система Спагнуоло предполагает прессинговое покрытие и zone pattern-match — идеальный контекст для Делейна. Ожидается сразу стартовая роль. Никакой «кривой обучения».</p>
           </div>
           <div class="persp-box">
             <span class="p-label">ДОЛГОСРОЧНО</span>
-            <p>Потолок — топ-3 корнербек лиги. Если развить физическую прочность и руки на уровне стартовой линии — его 31.3 passer rating может упасть до 28.</p>
+            <p>Потолок — топ-3 корнербек лиги. Если развить физическую прочность и руки на уровне стартовой линии, Делейн может стать тем якорем вторичной обороны, каким для «Патриотов» был Дэррелл Ривз. Ранее в истории LSU на схожей позиции последним unanimous All-American был Гриди Уильямс (2018), пошедший в первом раунде.</p>
           </div>
         </div>
       </div>
 
       <div class="section">
         <div class="section-title red-t"><span class="icon">🚩</span>Скрытый риск / красный флаг</div>
-        <p>Завышенная цена обмена. Отправив пики #74 и #148 вместе с #9, «Чифс» лишили себя патронов для Дня 2–3. Сам Делейн переоценён ровно на 1–1.5 позиции — его место было пик #8–9, а не #6.</p>
+        <p>Завышенная цена обмена. Отправив пики #74 и #148 вместе с #9, «Чифс» лишили себя патронов для Дня 2–3. Сам игрок — минимум рисков. Риск сосредоточен в долгосрочных потерях глубины состава. Интересный факт из X: котировки ставок давали Делейну <strong>100 к 1</strong> на то, что он будет выбран именно под №6 — одно из самых нестандартных попаданий в истории букмекерского рынка драфта.</p>
       </div>
 
     </div>
@@ -687,9 +583,7 @@
 <div class="player-card">
   <div class="card-inner">
     <div class="card-header">
-      <div class="card-photo-section">
-        <div class="card-photo-placeholder">📸</div>
-      </div>
+      <div class="card-header-left">
         <div class="pick-badge">РАУНД 1 · ПИК #29 · DEFENSIVE TACKLE</div>
         <div class="player-name">ПИТЕР ВУДС</div>
         <div class="player-pos-school">DT · Clemson</div>
@@ -697,7 +591,6 @@
       <div class="card-grade">
         <span class="grade-label">ИТОГОВАЯ ОЦЕНКА</span>
         <div class="grade-value grade-B-plus">B+</div>
-        </div>
       </div>
     </div>
 
@@ -709,14 +602,6 @@
       <div class="meas-item"><span class="meas-label">Возраст</span><span class="meas-val">21 год (март 2005)</span></div>
     </div>
 
-    <!-- VIDEO HIGHLIGHTS -->
-    <div class="video-highlights">
-      <div class="video-highlights-title">▶ ХАЙЛАЙТЫ СЕЗОНА</div>
-      <div class="video-container">
-        <!-- Вставьте YouTube ссылку здесь: https://www.youtube.com/embed/VIDEO_ID -->
-      </div>
-    </div>
-  
     <div class="card-body">
 
       <div class="section">
@@ -1233,5 +1118,4 @@
 </div>
 
 </body>
-</html>
 </html>
